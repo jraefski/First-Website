@@ -1,0 +1,90 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>about</title>
+  <link rel="stylesheet" type = "text/css" href="About.css">
+  
+  <style>
+  body  {
+    background-color: black;
+}
+  #first, #second{
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align:left;
+  padding:10px;
+  
+  border:2px solid black;
+  float:left;
+  height: 1000px;
+  background-color: white; 
+  width: 30%;  
+  font-weight: bold;
+}
+  </style>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+      
+    } else {
+        x.className = "topnav";
+     
+    }
+ /*$(function() {
+  var pull    = $('#pull');
+    menu    = $('nav ul');
+ 
+  $(pull).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle();
+  });
+});*/
+}
+</script>
+  
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="#companylogo"><img alt="Company Logo" src="banner.jpg" width="100" height="55"></a>
+  <a href="homePage.html" class = "home">Home</a>
+  <a href="media.html">Media</a>
+  <a href="news.html">News</a>
+  <a href="forums.html">Shop</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">Products</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+     
+    <div id="first">
+      <img  src="logo-en.png" alt="" class="picture-img" width="480" height="480"/>
+      
+      <p>The Witcher 3: Wild Hunt is the third and final installment in the series of games developed by CD Projekt RED featuring the witcher Geralt of Rivia. The game was originally scheduled for release in late 2014, then pushed back to 24 February 2015, and finally released on 19 May 2015. During the first two weeks since release it had sold more than 4 million copies worldwide, more than doubling the total sales of its predecessor The Witcher 2: Assassins of Kings.</p>
+	  <p>Unlike the previous games, The Witcher 3 is set in a multi-region open world, featuring over 100 hours of content. Several early articles mentioned that the developers planned to have an open world similar to that in Skyrim, but 20% larger. The devs were quick to point out that while there was much to appreciate in Bethesda's open world concept, they were also making an effort not to repeat what they perceived as the flaws in-game. As with earlier games, the consequences of Geralt's actions will impact how the narrative progresses. The game has been built using the new REDengine 3 and was designed with player feedback from fans of previous Witcher games in mind.</p>
+	   <a href="forums.html">
+	  <p>Purchase here</p>
+	  </a>
+    </div>
+	
+	<div id="first">
+      
+      <img  src="gwent_logo.jpg" alt="" class="picture-img" width="480" height="480"/>
+	  <p>Gwent is ancient dwarven card game mentioned in Baptism of Fire novel by Andrzej Sapkowski (as barrel for UK and US readers) and featured in The Witcher 3: Wild Hunt. On June 15, 2016 CD Projekt RED announced the development of a stand-alone GWENT: The Witcher Card Game. GWENT is available for Xbox One, PC, and PlayStation 4 as a free-to-play game that puts you, not your cards, in the center of the action.[2]</p>
+    <a href="https://www.playgwent.com/en"
+      <p>Download for free here</p>
+    </a>
+    </div>
+	
+	<div id="first">
+       <img  src="cyberpunkti.jpg" alt="" class="picture-img" width="480" height="480"/>
+      <p>Cyberpunk 2077 is a role-playing video game announced in 2012, based on the Cyberpunk series of tabletop role-playing games. The game is being produced by CD Projekt RED, developers of the video game The Witcher. Cyberpunk 2077 will feature a dystopian futuristic world in which ultra-modern technology co-exists with a degenerated human society.</p>
+    </div>
+    
+
+</body>
+</html>

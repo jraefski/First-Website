@@ -1,0 +1,155 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>News</title>
+  <link rel="stylesheet" type = "text/css" href="News.css">
+  <style>
+body  {
+    background-image: url("cyberpunk.jpg");
+}
+h1{
+  font-size:300%;
+  text-align: center;
+  font-style: italic;
+  color: white;
+}
+
+h2{
+  margin-top:10px;
+  text-align:center;
+}
+
+p{
+  text-align: center;
+}
+.p1{
+  padding-top: 3%;
+}
+.p2{
+  text-align: center;
+}
+
+#one, #two, #three{
+display:none;
+}
+
+#first, #second{
+  margin-top: 450px;
+  margin-left: 20px;
+  text-align:center;
+  padding:10px;
+  
+  border:2px solid black;
+  float:left;
+  height: 250px;
+  background-color: white; 
+  width: 30%;  
+  font-weight: bold;
+}
+
+
+
+
+#third{
+margin-top: 450px;
+  text-align: center;
+  margin-left: 20px;
+  padding:10px;
+  font-weight: bold;
+  display: inline-block;
+  height: 250px;
+  border:2px solid black;
+  background-color: white;
+  width:30%;
+}
+
+
+</style>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+      
+    } else {
+        x.className = "topnav";
+     
+    }
+ /*$(function() {
+  var pull    = $('#pull');
+    menu    = $('nav ul');
+ 
+  $(pull).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle();
+  });
+});*/
+}
+
+function reveal1(){
+	var x = document.getElementById("one");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function reveal2(){
+	var x = document.getElementById("two");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function reveal3(){
+	var x = document.getElementById("three");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+  
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="#companylogo"><img alt="Company Logo" src="banner.jpg" width="100" height="55"></a>
+  <a href="homePage.html" class = "home">Home</a>
+  <a href="media.html">Media</a>
+  <a href="news.html">News</a>
+  <a href="forums.html">Shop</a>  
+  <a href="contact.html">Contact</a>
+  <a href="about.html">Products</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+ <div class="main">
+     <a href="http://cyberpunk.net/blog/">
+    <div id="first">
+      <img onmouseover= "reveal1()" src="cyberp1.jpg" alt="" class="picture-img" width="100" height="100"/>
+      
+      <p id= "one">Check out the latest updates from the developers</p>
+    </div>
+    </a>
+	
+	<a href="media.html">
+
+    <div id="second">
+      <img onmouseover= "reveal2()" src="cyberpunk2077.jpg" alt="" class="picture-img" width="100" height="100"/>
+      
+      <p id= "two">Access to the concept art and videos for Cyberpunk 2077</p>
+    </div>
+	 </a>
+	
+    <a href="https://forums.cdprojektred.com/forum/en/cyberpunk">
+     <div id="third">
+      <img onmouseover= "reveal3()" src="cyber2.jpg" alt="" class="picture-img" width="100" height="100"/>
+      
+      <p id= "three">Join the Cyberpunk 2077 forums here.</p>
+    </div>
+	</a>
+</body>
+</html>

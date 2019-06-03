@@ -1,0 +1,253 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contact</title>
+  <link rel="stylesheet" type = "text/css" href="Contact.css">
+  <style>
+	#first, #second{
+  margin-top: 15px;
+  margin-left: 15%;
+  text-align:center;
+  padding:10px;
+  
+  border:2px solid black;
+  float:left;
+  height: 250px;
+  background-color: white; 
+  width: 30%;  
+  font-weight: bold;
+}
+#first.h{
+  
+}
+#one{
+    margin-top:50px;
+    margin-left: 15%;
+	text-align: center;
+   
+}
+
+.retail{
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+#job1{
+  margin-top: 15px;
+  margin-left: 15%;
+  text-align:center;
+  padding:10px;
+  display:none;
+  border:2px solid black;
+  float:left;
+  height: 35%;
+  background-color: white; 
+  width: 30%;  
+  font-weight: bold;
+}
+#job2{
+  margin-top: 15px;
+  margin-left: 15%;
+  text-align:center;
+  padding:10px;
+  display:none;
+  border:2px solid black;
+  float:left;
+  height: 34%;
+  background-color: white; 
+  width: 30%;  
+  font-weight: bold;
+}
+#job3{
+  margin-top: 15px;
+  margin-left: 15%;
+  text-align:center;
+  padding:10px;
+  display:none;
+  border:2px solid black;
+  float:left;
+  height: 34%;
+  background-color: white; 
+  width: 30%;  
+  font-weight: bold;
+}
+  </style>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+      
+    } else {
+        x.className = "topnav";
+     
+    }
+ /*$(function() {
+  var pull    = $('#pull');
+    menu    = $('nav ul');
+ 
+  $(pull).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle();
+  });
+});*/
+}
+function dropbox() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.retail')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function reveal1(){
+	var x = document.getElementById("job1");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function reveal2(){
+	var x = document.getElementById("job2");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function reveal3(){
+	var x = document.getElementById("job3");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+</script>
+  
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="#companylogo"><img alt="Company Logo" src="banner.jpg" width="100" height="55"></a>
+  <a href="homePage.html" class = "home">Home</a>
+  <a href="media.html">Media</a>
+  <a href="news.html">News</a>
+  <a href="forums.html">Shop</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">Products</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class = "pageCenter">
+   <img id ="large" src="job.jpg" alt="" class="picture-img" width="100%" height="800" />
+   
+  <div id="first">
+      
+      <h1>Support</h1>
+    <a href="http://en.cdprojektred.com/support/"
+      <p id= "one">Click here for support </p>
+    </a>
+    </div>
+
+<div id="second">
+  <h1>Jobs</h1>
+      <button onclick="dropbox()" class="retail"> Locations</button>
+      <div id="myDropdown" class="dropdown-content">
+        <p onclick = "reveal1()"> Los Angeles </p>
+        <p onclick = "reveal2(); reveal3();"> Warsaw </p>
+    
+   </div>
+  </div>
+
+<div id = "job1">
+  <h2>PR Manager (NA)</h2>
+  <h3>Los Angeles</h3>
+    <ul>
+   <li>Establish and maintain close relationships with all key media outlets, editors and influencers across North America.</li>
+   <li>Create, oversee and update database of NA gaming and mainstream media and influencers.</li>
+   <li>Establish and organize the daily work of PR department and external PR agencies in collaboration with global HQ.</li>
+</ul>  
+  <a href="http://en.cdprojektred.com/jobs/pr-manager-la/">
+  <p>Apply</p>
+  </a>
+  </div>
+
+<div id = "job2">
+  <h2>Animation Programmer</h2>
+  <h3>Warsaw</h3>
+    <ul>
+   <li>Prototyping and coding animation features.</li>
+   <li>Developing and maintaining animation system in our engine.</li>
+   <li>Debugging and bug fixing.</li>
+</ul>  
+  <a href="http://en.cdprojektred.com/jobs/animation-programmer-cp/">
+  <p>Apply</p>
+  </a>
+  </div>
+  
+  </div>
+<div id = "job3">
+  <h2>Data Analyst</h2>
+  <h3>Warsaw</h3>
+    <ul>
+   <li>Gathering, analyzing and sharing GWENT data for marketing campaigns and in-game performance.</li>
+   <li>Influencing marketing department decisions by providing hard-data based feedback.</li>
+   <li>Creating and analyzing data reports as well as identifying statistical trends within the available data.</li>
+</ul>  
+  <a href="http://en.cdprojektred.com/jobs/data-analyst/">
+  <p>Apply</p>
+  </a>
+  </div>
+  
+  </div>
+     
+
+</body>
+</html>

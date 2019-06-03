@@ -1,0 +1,117 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Home</title>
+  <link rel="stylesheet" type = "text/css" href="Home.css">
+  
+  <style>
+body  {
+    background-color: black;
+}
+
+</style>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+      
+    } else {
+        x.className = "topnav";
+     
+    }
+ /*$(function() {
+  var pull    = $('#pull');
+    menu    = $('nav ul');
+ 
+  $(pull).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle();
+  });
+});*/
+
+}
+
+
+  function swapImage() {
+ 
+    
+      document.getElementById("large").src = "dlc1.jpg";
+	  document.getElementById("large").style.width = "1200px";
+	  document.getElementById("large").style.height = "700px";
+    
+    }
+	function swapImage2() {
+		document.getElementById("large").src = "dlc2.jpg";
+	  document.getElementById("large").style.width = "1200px";
+	  document.getElementById("large").style.height = "700px";
+	}
+	
+	function swapImage3() {
+		document.getElementById("large").src = "gif1.gif";
+	  document.getElementById("large").style.width = "1200px";
+	  document.getElementById("large").style.height = "700px";
+	}
+	
+	function swapImage4() {
+	  document.getElementById("large").src = "gif2.gif";
+	  document.getElementById("large").style.width = "1200px";
+	  document.getElementById("large").style.height = "700px";
+	}
+	
+	function enlarge(){
+		
+		if(document.getElementById("video").style.width === "420"){
+			document.getElementById("video").style.width = "700";
+			document.getElementById("video").style.height = "600";
+		}
+	
+	}
+	
+  
+</script>
+  
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="#companylogo"><img alt="Company Logo" src="banner.jpg" width="100" height="55"></a>
+  <a href="homePage.html" class = "home">Home</a>
+  <a href="media.html">Media</a>
+  <a href="news.html">News</a>
+  <a href="forums.html">Shop</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">Products</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<a href="http://cyberpunk.net/blog/">
+ <div class = "pageCenter">
+   <img id ="large" src="cyberpunkti.jpg" alt="" class="picture-img" width="1100" height="800" />
+   </a>
+   
+   </div>
+  <div>
+    <img  src="gwent.jpg" alt="" class="picture-img" width="400" height="400"/>
+  </div>
+  <div>
+    <img src="home1.jpg" alt="" class="picture-img" width="400" height="400"/>
+  </div>
+
+    
+  
+  
+  
+  
+<div class = "footer">
+  <p><a href="https://regulations.cdprojektred.com/en/user_agreement">User Agreement</a>
+  <a href="https://regulations.cdprojektred.com/en/privacy_policy/">Privacy Policy</a>
+  <a href="http://www.mailing.cdprojektred.com/site/cd_projekt_red_press_release/webform.html?u=IbkA&wid=357415">Mailing List</a></p>
+  </div>
+  
+
+
+
+</body>
+</html>

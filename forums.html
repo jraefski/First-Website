@@ -1,0 +1,127 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Forums</title>
+  <link rel="stylesheet" type = "text/css" href="Forums.css">
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+      
+    } else {
+        x.className = "topnav";
+     
+    }
+ 
+}
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function dropbox() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.retail')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<style>
+body  {
+    background-image: url("ww.jpg");
+}
+
+#one{
+    margin-top:50px;
+    margin-left: 15%;
+	text-align: center;
+   
+}
+
+.retail{
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+</style>
+  
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="#companylogo"><img alt="Company Logo" src="banner.jpg" width="100" height="55"></a>
+  <a href="homePage.html" class = "home">Home</a>
+  <a href="media.html">Media</a>
+  <a href="news.html">News</a>
+  <a href="forums.html">Shop</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">Products</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class = "row1" id ="one">
+  
+   <img  src="logo-en.png" alt="" class="picture-img" width="500" height="200"/>
+  <div>
+   <img  src="includes-expansions-en.png" alt="" class="picture-img" width="400" height="120" />
+  </div>
+
+  
+  <div class="dropdown">
+<button onclick="dropbox()" class="retail"> Buy Digital</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://store.steampowered.com/sub/124923/"><button onclick="dropbox()" class="retail"> Buy Digital</button></a>
+    <a href="https://www.gog.com/the_witcher_3_goty_edition?utm_medium=referral&utm_source=buy_thewitcher_com&utm_campaign=20160830_buy_thewitcher_com">PC - GoG.com </a>
+    <a href="https://store.playstation.com/en-us/home/games#!/en-us/games/the-witcher-3-wild-hunt-–-complete-edition/cid=UP4497-CUSA05725_00-00000000000GOTY5">PS4</a>
+    <a href="https://www.microsoft.com/en-us/store/p/the-witcher-3-wild-hunt-complete-edition/c261457lcnmj?rtc=1">XBOX</a>
+  </div>
+</div>
+
+</body>
+</html>
